@@ -1,3 +1,8 @@
+import os
+from dotenv import load_dotenv
+import alpaca_trade_api as tradeapi
+import pandas as pd
+
 def retrieve_data(tickers, start_date, end_date):
     """Retrieve historical data for a list of tickers within a specified time period.
     
