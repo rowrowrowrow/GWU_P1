@@ -19,3 +19,5 @@ def run():
     
     # Store data in SQL database
     store_data_sql(data_df)
+   
+    

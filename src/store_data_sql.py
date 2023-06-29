@@ -2,6 +2,7 @@ import pandas as pd
 import sqlalchemy
 from src.table_exists import table_exists
 
+
 def store_data_sql(data):
     """Stores data into separate tables in an SQL database based on unique symbols.
     
@@ -38,4 +39,5 @@ def store_data_sql(data):
         else:
             # If the table does not exist, save the data directly
             symbol_data.to_sql(name=symbol, con=engine, if_exists='replace', index=False)
+    
     

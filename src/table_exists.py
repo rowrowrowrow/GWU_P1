@@ -1,4 +1,3 @@
-
 def table_exists(engine, table_name):
     """
     Checks if a table exists in the SQL database.
