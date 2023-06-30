@@ -1,5 +1,6 @@
 from src.retrieve_data import retrieve_data
 from src.store_data_sql import store_data_sql
+from src.data_formating import format_data
 import pandas as pd
 
 def run():
@@ -19,5 +20,8 @@ def run():
     
     # Store data in SQL database
     store_data_sql(data_df)
+
+     # Format data Dataframe
+    formated_data_df = format_data(data_df)
    
     
