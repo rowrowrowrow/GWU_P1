@@ -1,0 +1,6 @@
+alpaca_trade_api==3.0.0
+ipywidgets==8.0.4
+matplotlib==3.7.0
+pandas==1.5.3
+python-dotenv==1.0.0
+SQLAlchemy==1.4.39
