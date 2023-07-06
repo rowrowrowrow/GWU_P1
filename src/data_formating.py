@@ -28,4 +28,6 @@ def format_data(data):
     # Reset index and rename columns
     formatted_data = formatted_data.reset_index().rename_axis(None, axis=1)
     
+    formatted_data = formatted_data.set_index('date')
+    
     return formatted_data

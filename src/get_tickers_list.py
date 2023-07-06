@@ -20,11 +20,13 @@ def get_tickers_list():
     # Create the Alpaca tradeapi.REST object
     alpaca = tradeapi.REST(alpaca_api_key, alpaca_secret_key, api_version="v2")
     
-    active_assets = alpaca.list_assets()
+    active_assets = alpaca.list_assets(status='active')
 
     # Create a list of tuples with symbol and index
     tickers_list = [(asset.name , asset.symbol) for index, asset in enumerate(active_assets)]
-
+    
+    tickers_list.sort()
+    
     return tickers_list
 
 
