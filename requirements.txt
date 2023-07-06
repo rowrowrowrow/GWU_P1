@@ -5,3 +5,4 @@ pandas==1.5.3
 python-dotenv==1.0.0
 SQLAlchemy==1.4.39
 voila==0.4.0
+pyportfolioopt==1.5.5
