@@ -12,6 +12,8 @@ This application uses python 3, please install the necessary packages as describ
 
 ## Installation Guide
 
+Use an environment with python=3.8.16.
+
 ```
 pip install -r requirements.txt
 ```
